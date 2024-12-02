@@ -1,0 +1,22 @@
+.why-section{
+    background-color: var(--background-aditional);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    h2{
+        font-size: 60px;
+            @media (max-width: $mobile) {
+                font-size: 30px;
+            }
+    }
+
+    .box-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

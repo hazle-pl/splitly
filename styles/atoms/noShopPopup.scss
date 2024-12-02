@@ -1,0 +1,31 @@
+.no-shop-popup{
+    position: absolute;
+    z-index: 100000;
+    background: #232323bd;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .richText{
+        background-color: var(--background-main);
+        padding: 30px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .buttons{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .button,button{
+            width: fit-content;
+        }
+    }
+}

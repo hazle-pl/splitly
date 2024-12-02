@@ -1,0 +1,50 @@
+:root {
+
+    --text-main: rgb(0, 6, 17);
+    --text-aditional: rgb(39, 40, 41);
+    --text-light: rgb(173, 173, 173);
+    --text-contrast: rgb(116, 255, 35);
+
+    --dark-text-main: rgb(238, 239, 241);
+    --dark-text-aditional: rgb(216, 217, 218);
+    --dark-text-contrast: rgb(116, 255, 35);
+
+    --background-lightest: rgb(255, 255, 255);
+    --background-main: rgb(238, 239, 241);
+    --background-aditional: rgb(217, 224, 230);
+    --background-contrast: rgb(39, 40, 41);
+    --background-contrast-green: rgb(116, 255, 35);
+
+    --dark-background-lightest: rgb(39, 40, 41);
+    --dark-background-main: rgb(8, 8, 8);
+    --dark-background-aditional: rgb(39, 40, 41);
+    --dark-background-contrast: rgb(216, 217, 218);
+
+    --buton-main: rgb(0, 6, 17);
+    --button-text: rgb(238, 239, 241);
+
+    --button-secondary: rgb(54, 54, 54);
+    --button-secondary-text: rgb(238, 239, 241);
+
+    --dark-buton-main: rgb(238, 239, 241);
+    --dark-button-text: rgb(0, 6, 17);
+
+    --valid: green;
+    --invalid: red;
+  }
+  
+  body.dark-mode, .dark {
+  
+    --text-main: var(--dark-text-main);
+    --text-aditional: var(--dark-text-aditional);
+    --text-contrast: var(--dark-text-contrast);
+
+    --buton-main: var(--dark-buton-main);
+    --button-text: var(--dark-button-text);
+
+    --background-main: var(--dark-background-main);
+    --background-aditional: var(--dark-background-aditional);
+    --background-contrast: var(--dark-background-contrast);
+    --background-lightest: var(--dark-background-lightest);
+
+  }

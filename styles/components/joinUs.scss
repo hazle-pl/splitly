@@ -1,0 +1,27 @@
+.join-us{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .content-wrapper{
+        background-color: var(--background-contrast-green);
+        border-radius: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        h2{
+            font-size: 60px;
+                @media (max-width: $mobile) {
+                    font-size: 30px;
+                }
+        }
+
+        .richText{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a{
+                width: fit-content;
+            }
+        }
+    }
+}

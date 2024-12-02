@@ -1,0 +1,86 @@
+.custom-dropdown {
+    position: relative;
+    padding: 0px 16px;
+    border: 1px solid var(--background-aditional);
+    border-radius: 12px;
+    background-color: var(--background-lightest);
+
+
+    &.not-empty{
+        label{
+            transform: translatey(-25px);
+        }
+    }
+
+    label{
+        position: absolute;
+        left: $gap;
+        background-color: var(--background-lightest);
+        transition: 0.25s;
+        top: 10px;
+        z-index: 1;
+    }
+
+    .dropdown {
+        position: relative;
+        width: 100%;
+
+        .selected-option{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 15px;
+            align-items: center;
+            cursor: pointer;
+            z-index: 2;
+            position: relative;
+            min-height: 47px;
+            white-space: nowrap;
+            margin-right: 5px;
+
+            i{
+                position: absolute;
+                right: 0px;
+                transition: 0.25s;
+            }
+        }
+    
+        .dropdown-list{
+            display: none;
+            flex-direction: column;
+            list-style: none;
+            position: absolute;
+            z-index: 10;
+            width: calc(100% + $gap);
+            top: 45px;
+            left: -15px;
+            padding: 0px 16px;
+            border: 1px solid var(--background-aditional);
+            border-radius: 12px;
+            background-color: var(--background-main);
+            box-shadow: 0px 10px 10px var(--background-aditional);
+
+            li{
+                border-bottom: 1px solid var(--background-aditional);
+                cursor: pointer;
+                padding: 16px;
+
+                &:hover{
+                    font-weight: 500;
+                }
+            }
+        }
+    
+        &.open{
+            display: flex;
+
+            i{
+                transform: rotate(180deg);
+            }
+    
+            .dropdown-list{
+                display: flex;
+            }
+        }
+      }
+  }

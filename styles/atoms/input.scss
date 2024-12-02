@@ -1,0 +1,54 @@
+.custom-input{
+    position: relative;
+    padding: 0px 16px;
+    border: 1px solid var(--background-aditional);
+    border-radius: 12px;
+    background-color: var(--background-lightest);
+
+    &.not-empty{
+        label{
+            transform: translatey(-25px);
+            z-index: 10;
+        }
+    }
+    label{
+        position: absolute;
+        left: 40px;
+        background-color: var(--background-lightest);
+        transition: 0.25s;
+        top: 15px;
+        z-index: 1;
+    }
+    input{
+        border: none;
+        padding: 16px 15px;
+        background-color: transparent;
+        z-index: 2;
+        position: relative;
+        cursor: pointer;
+        width: calc(100% - 20px);
+        
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .password-toggle-icon{
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+//Error
+
+.has-error{
+    border-color: var(--invalid);
+  }
+  
+  .error-message {
+    color: var(--invalid);
+    margin-top: -20px;
+    margin-bottom: 0px;
+  }

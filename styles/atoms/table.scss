@@ -1,0 +1,76 @@
+table{
+    border-collapse: collapse;
+    width:100%;
+    overflow: scroll;
+    display: table;
+
+    @media screen and (max-width: $mobile) {
+        overflow-x: auto;
+        display: block;
+        width: 100%;
+    }
+
+    thead{
+        background-color: var(--buton-main);
+        color: var(--button-text);
+
+        th{
+            font-weight: 300;
+            padding: 16px;
+        }
+    }
+    tbody{
+        tr{
+            border-bottom: 1px solid var(--background-aditional);
+            
+            td{
+                padding: 16px;
+                gap: 16px;
+
+                .buttons{
+                    display: flex;
+                    gap: 16px;
+
+                    &.edit{
+                        display: grid;
+                        min-width: 250px;
+                    }
+                }
+
+                &[colspan="11"] {
+                    padding: 0px;
+                  }
+     
+                &:not(:nth-last-child(1)){
+                    border-right: 1px solid var(--background-aditional);
+                }
+            }
+        }
+    }
+}
+
+.skeleton {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .skeleton-row {
+    background-color: #e0e0e0;
+    height: 20px;
+    border-radius: 4px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #e0e0e0;
+    }
+    50% {
+      background-color: #c0c0c0;
+    }
+    100% {
+      background-color: #e0e0e0;
+    }
+  }

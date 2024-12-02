@@ -1,0 +1,25 @@
+header{
+    padding: $gap 0;
+
+    .content-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        .logo{
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 20px;
+
+            span{
+                color: var(--text-contrast);
+            }
+        }
+
+        .header-content{
+            display: flex;
+            gap: 15px;
+        }
+    }
+}

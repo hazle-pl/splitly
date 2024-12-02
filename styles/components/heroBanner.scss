@@ -1,0 +1,44 @@
+.hero-banner{
+    .content-wrapper{
+        flex-direction: row;
+        gap: 30px;
+
+        @media (max-width: $mobile) {
+            flex-direction: column-reverse;
+
+            img {
+                width: 100% !important;
+            }
+          }
+
+        .richText{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            a{
+                width: fit-content;
+            }
+
+            h1{
+                font-size: 60px;
+                @media (max-width: $mobile) {
+                    font-size: 30px;
+                }
+            }
+            h3{
+                font-size: 25px;
+                color: var(--text-light);
+                font-weight: 400;
+
+                @media (max-width: $mobile) {
+                    font-size: 15px;
+                }
+            }
+        }
+        img{
+            width: 500px;
+            max-height: 700px;
+        }
+    }
+}

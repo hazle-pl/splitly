@@ -1,0 +1,23 @@
+.spyshark-on-mobile{
+    .content-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+
+        @media (max-width: $mobile) {
+            flex-direction: column;
+        }
+
+        h2{
+            font-size: 60px;
+                @media (max-width: $mobile) {
+                    font-size: 30px;
+                }
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+}

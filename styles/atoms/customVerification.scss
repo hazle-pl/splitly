@@ -1,0 +1,30 @@
+.custom-verification{
+    .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 15px;
+      background: var(--background-aditional);
+      outline: none;
+      transition: opacity 0.15s ease-in-out;
+      border-radius: 10px;
+    }
+
+    .verification-success{
+      margin-bottom: 0px;
+    }
+    
+    .slider:hover {
+      opacity: 1;
+    }
+    
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 15px;
+      background: var(--text-main);
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+  }

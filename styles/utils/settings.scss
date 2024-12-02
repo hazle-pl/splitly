@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--background-main);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+*{
+    box-sizing: border-box;
+}

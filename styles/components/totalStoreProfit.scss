@@ -1,0 +1,38 @@
+.revenue-box{
+    background-color: var(--background-lightest);
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid var(--background-aditional);
+    display: flex;
+    justify-content: space-between;
+
+    p{
+        margin: 0;
+    }
+    .title{
+        margin-bottom: 15px;
+    }
+    .revenue{
+        color: var(--text-light);
+        margin-bottom: -10px;
+    }
+    .profit{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .prev-peroid{
+        display: flex;
+        gap: 5px;
+        font-size: 20px;
+    }
+
+    .increased{
+        color: var(--text-contrast);
+    }
+    .decreased{
+        color: var(--invalid);
+    }
+    .no-change{
+        color: var(--text-light);
+    }
+}
